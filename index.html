@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frontend Mentor | Contact form</title>
+    <script src="app.js" defer></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h2>Contact us</h2>
+        <form id="FORM" action="">
+            <div class="nameGroup">
+                <div class="form-group ">
+                    <label for="first-name">First name</label>
+                    <input class="" id="first-name" type="text" name="first-name">
+                    <small class="First-hint">This field is required</small>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last name</label>
+                    <input id="last-name" name="last-name" type="text">
+                    <small class="last-hint">This field is required</small>
+                </div>
+            </div>
+
+            <div class="form-group email">
+                <label for="email">Email</label>
+                <input class="" id="email" type="email">
+                <small class="emailHint">Please enter a valid email address</small>
+            </div>
+            <div class="radioOptions">
+                <p class="qTitle">Query Type</p>
+                <div class="general">
+                    <input type="radio" value="General Enquiry" name="query" id="General">
+                    <label for="General">General Enquiry</label>
+                </div>
+                <div class="support">
+                    <input type="radio" id="Support" name="query" value="Support Request">
+                    <label for="Support">Support Request</label>
+                </div>
+                <small class="radioHint">Please select a query type</small>
+            </div>
+            <div class="message">
+                <label for="Message">Message</label>
+                <textarea class="" name="message" id="Message"></textarea>
+                <small class="msgHint">This field is required</small>
+            </div>
+            <div class="consent">
+                <input id="consent" type="checkbox">
+                <label for="consent"> I consent to being contacted by the team</label>
+                <small class="centHint">To submit this form, please consent to being contacted</small>
+            </div>
+            <input type="submit">
+        </form>
+    </section>
+
+    <div id="Success-Message">
+        <img src="assets/images/icon-success-check.svg" alt="checkmark">
+        <h2>Message Sent!</h2>   
+        <p class="main-sucess">
+            Thanks for completing the form. We'll be in touch soon!
+        </p>
+    </div>
+</body>
+</html>
